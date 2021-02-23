@@ -1,6 +1,10 @@
 import numpy as np
 import random
 
+import sys
+if sys.version_info.major >= 3:
+    from functools import reduce
+
 def KMeans(kClusters, numIterations, attributes, data):
     clusters = []
     for i in range(numIterations):

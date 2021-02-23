@@ -16,8 +16,8 @@ clusters = KMeans(3, 5, attributes, testData)
 
 colors = ['red', 'green', 'blue']
 for i in range(len(clusters)):
-    xValues = map(lambda data: data['Attribute1'], clusters[i]['data'])
-    yValues = map(lambda data: data['Attribute2'], clusters[i]['data'])
+    xValues = list(map(lambda data: data['Attribute1'], clusters[i]['data']))
+    yValues = list(map(lambda data: data['Attribute2'], clusters[i]['data']))
 
     plt.scatter(xValues, yValues, c=colors[i], alpha=0.8)
 

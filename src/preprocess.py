@@ -10,7 +10,7 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import silhouette_score
 
 
-def preprocess(tracks):
+def preprocess(tracks, drop_cols=False):
     """
     Check for null values. If we detect any, we should consider providing
     an estimated value or discarding the row from the analysis.
@@ -65,5 +65,8 @@ def preprocess(tracks):
     print("Skipped data normalization for these columns: {0}".format(no_normalize))
     print("Data normalized successfully!")
     print(tracks.describe(include='all'))
-
+    if drop_cols:
+        print("dropping columns from table")
+        tracks = tracks.drop(columns=no_normalize)
+        print("dropped: ".format(no_normalize))
     return tracks

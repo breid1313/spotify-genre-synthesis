@@ -23,10 +23,6 @@ import matplotlib.pyplot as plt
 
 # set the location on the data files
 DATA_FILE = Path(__file__).parent.parent / "./data/data.csv"
-DATA_BY_GENRE = Path(__file__).parent.parent / "./data/data_by_genres.csv"
-DATA_BY_ARTIST = Path(__file__).parent.parent / "./data/data_by_artist.csv"
-DATA_BY_YEAR = Path(__file__).parent.parent / "./data/data_by_year.csv"
-DATA_WITH_GENRE = Path(__file__).parent.parent / "./data/data_w_genres.csv"
 
 """
 Start exploring the data.

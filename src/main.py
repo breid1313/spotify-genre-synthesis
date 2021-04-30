@@ -6,6 +6,7 @@ from pathlib import Path
 
 from fuzzyCMeans import FuzzyCMeans
 from agglomerative import runAgglomerative
+from kmeans import runKmeans
 
 # set the location on the data files
 DATA_FILE = Path(__file__).parent.parent / "./data/data.csv"
@@ -29,3 +30,6 @@ if __name__ == "__main__":
 
     print("Running Agglomerative Hierarchical Clustering")
     runAgglomerative(sample_size=20000)
+
+    print("Running KMeans clustering")
+    runKmeans()

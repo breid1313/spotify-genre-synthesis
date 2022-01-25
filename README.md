@@ -12,4 +12,4 @@ This repository depends on a few python packages. To get them:
 
 `python3 src/main.py`
 
-Note that this script must be run in python3. Python2 is note supported.
+Note that this script must be run in python3. Python2 is not supported.
